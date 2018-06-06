@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Temp</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel = "stylesheet">
+		<script src="https://use.fontawesome.com/939e9dd52c.js"></script>
+
+</head>
+<body>
+	<div class = "mainDiv" align="left">
+		<h1>All Users</h1>
+		<table>
+			<thead>
+				<tr>
+					<td>Name</td>
+					<td>Email</td>
+					<td>Actions</td>
+				</tr>
+			</thead>
+			<tbody id = "tableID">
+				<!--<tr>
+					<td>OKS</td>
+					<td>OKS@gogo.com</td>
+					<td><button>Remove</button></td>
+				</tr>
+				<tr>
+					<td>OKSNO</td>
+					<td>NOKS@gogo.com</td>
+					<td><button>Remove</button></td>
+				</tr>-->
+			</tbody>
+		</table>
+	</div>
+	<!--	<div>
+		<textarea id="mainText" placeholder="Enter Text Here"></textarea>
+		<button id="submitBtn" onclick="submitClick()"><i class = "fa fa-arrow-right" aria-hidden ="true"></i></button>
+	</div> -->
+	<script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+	<script>
+  // Initialize Firebase
+  	var config = {
+    	apiKey: "AIzaSyCfe9Odb_bvA0InfxvSIpmbPy-nv1i5C9k",
+    	authDomain: "camerademo-927e5.firebaseapp.com",
+    	databaseURL: "https://camerademo-927e5.firebaseio.com",
+    	projectId: "camerademo-927e5",
+    	storageBucket: "camerademo-927e5.appspot.com",
+    	messagingSenderId: "879569745331"
+  	};
+  	firebase.initializeApp(config);
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<script src="basis.js"></script>
+
+</body>
+</html>
