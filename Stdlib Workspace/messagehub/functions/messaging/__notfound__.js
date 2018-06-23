@@ -1,5 +1,6 @@
 const lib = require('lib')({ token: process.env.STDLIB_TOKEN })
 const send = require('../../helpers/send.js')
+const updating = require('basis.js')
 
 const DEMO_REGEX = /^\s*UPDATE\s*.*$/gi
 
@@ -19,7 +20,7 @@ module.exports = async (sender = '', receiver = '', message = '', createdDatetim
     return send(
       receiver,
       sender,
-      `Sending Info`
+      updating
     )
   } else {
     // We didn't find a command or match anything
