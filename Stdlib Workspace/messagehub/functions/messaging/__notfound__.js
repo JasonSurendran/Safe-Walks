@@ -19,7 +19,7 @@ module.exports = async (sender = '', receiver = '', message = '', createdDatetim
     return send(
       receiver,
       sender,
-      `IN HERE PUT UPDATE CODE`
+      `Sending Info`
     )
   } else {
     // We didn't find a command or match anything
